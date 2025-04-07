@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="wUOzbnwDO7WbMA1jiz1IiUFKUTm_JxE5qQPQuIGeJkc" />
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M.R.S 777</title>
     <style>
         body {
-            background-color: #a9cfff;
+            background-color: thistle;
             font-family: Arial, sans-serif;
         }
 
-       
+        /* Menu styling */
         nav {
-            background-color: #a9cfff;
+            background-color: thistle;
             overflow: hidden;
         }
 
@@ -34,7 +34,7 @@
             display: none;
         }
 
-
+        
         .active {
             display: block;
         }
@@ -56,7 +56,7 @@
 </head>
 <body>
 
-
+    
     <nav>
         <a href="javascript:void(0)" onclick="showContent('home')">Home</a>
         <a href="javascript:void(0)" onclick="showContent('products')">Products</a>
@@ -64,7 +64,7 @@
         <a href="javascript:void(0)" onclick="showContent('contact')">Contact</a>
     </nav>
 
-
+    
     <div class="content">
         <div id="home" class="content-section active">
             <h3>Welcome to M.R.S 777</h3>
@@ -73,11 +73,9 @@
         <div id="products" class="content-section">
             <h3>Product</h3>
 
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScdsOOjqqL-MwgXEKRvDnVa_7Y1k9vT1VFAFktYpHEkn5MfNw/viewform?embedded=true" width="640" height="381" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
             <h2>Vide Registrator mrs77</h2>
             <img src="https://frankfurt.apollo.olxcdn.com/v1/files/x9zuy5wac5jm3-UZ/image" width="380" height="260">
-
+            
             <h3>Tesla Monitor “Android”</h3>
             <p><strong>360° gradus kamera ulasa bo’ladi</strong></p>
             <p><strong>Mavjud funksiyalar:</strong></p>
@@ -137,7 +135,7 @@
 
         <div id="about" class="content-section">
             <h2>About Us</h2>
-
+           
             <p>🚘 Большой ассортимент авто аксессуаров</p>
             <p>🚘 Katta xajimdagi Avto aksessuarlar</p>
             <p>📝 Гарантия имеются</p>
@@ -153,14 +151,14 @@
         </div>
     </div>
 
-
+  
     <script>
         function showContent(section) {
-
+         
             const sections = document.querySelectorAll('.content-section');
             sections.forEach(section => section.classList.remove('active'));
 
-
+            
             const activeSection = document.getElementById(section);
             activeSection.classList.add('active');
         }
@@ -168,3 +166,4 @@
 
 </body>
 </html>
+    
